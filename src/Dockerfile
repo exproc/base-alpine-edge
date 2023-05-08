@@ -8,3 +8,4 @@ COPY  src/etc/supervisor/  /etc/
 RUN ls -la /etc/supervisor.d/
 EXPOSE 80 443 69/udp 69/tcp
 CMD ["/usr/bin/supervisord",  "-c", "/etc/supervisord.conf"]
+
