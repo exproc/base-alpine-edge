@@ -1,6 +1,4 @@
 FROM alpine:edge
-LABEL Maintainer="Chris c <chris@cchalifo.xyz>"
-LABEL Description="Alpine Linux edge, BasImage"
 RUN mkdir -pv /etc/supervisor.d
 RUN apk add -U tzdata bash supervisor 
 ENV TZ=America/New_York
